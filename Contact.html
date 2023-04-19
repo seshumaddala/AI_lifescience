@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact us</title>
+<style>
+    body{
+        background-image: url(contact-us.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+    h3{
+        font-size: 30px;
+
+    }
+    h1{
+        font-size: 40px;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+   }
+
+   nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+   }
+
+   nav li {
+    text-align: center;
+    padding-left: 50px;
+      margin: 0 10px;
+   }
+
+   nav a {
+      color: #fff;
+      text-decoration: none;
+   }
+
+   nav a:hover {
+      text-decoration: none;
+   }
+   h1{
+   
+    font-size: 50px;
+   }
+   .para{
+    font-size: 25px;
+    color: #fff;
+   }
+   .para strong{
+    color: black;
+   }
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul {
+  background-color: gray; /* Change background color to your preference */
+  display: flex;
+}
+nav ul li {
+  flex-grow: 1;
+}
+nav ul li a {
+  display: block;
+  padding: 1rem; /* Add padding to your preference */
+  text-align: center;
+  color: #fff; /* Change text color to your preference */
+  text-decoration: none;
+  transition: background-color 0.3s ease; /* Add hover transition effect */
+}
+nav ul li a:hover {
+    background-color: white; 
+    color: blue;
+}
+</style>
+
+<script>
+    function fun(){
+        window.location.href="home.html";
+        alert("Your query has submited successfully");     
+    }
+</script>
+</head>
+<body>
+<nav>
+  <ul style="font-size: 25px;">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="significance.html">significance of AI in life sciences</a> </li>
+    <li><a href="contact.html"style="background-color:black">Contact</a></li>
+  </ul>
+</nav>
+        <center><h1 >Contact Us</h1></center>
+    <hr>
+    <form action="process-form.php" method="POST">
+     <h3><label for="email">Email:</label>
+      <input type="email" id="email" name="email" required size="20">
+    <br><br>
+      <label for="phone">Mobile Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+    <br><br>
+      <label for="query">Query:</label>
+      <textarea id="query" name="query" required></textarea>
+    <br><br>
+      <input onclick="fun()" type="submit" value="Submit" id="sub"></h3>
+    </form>
+</center>
+</body>
+</html>
